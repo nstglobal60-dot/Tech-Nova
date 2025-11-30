@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container nav">
+            <h1 class="logo">TechNova</h1>
+            <nav id="menu">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#payment">Payment</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h2>Innovating the Future with Smart Technology</h2>
+            <p>Your trusted partner for modern tech solutions that transform businesses.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive, and scalable websites built for performance.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile Apps</h3>
+                    <p>iOS and Android apps designed for speed and excellent user experiences.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Cloud Solutions</h3>
+                    <p>Secure, fast, and scalable cloud infrastructure for seamless operations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>AI & Automation</h3>
+                    <p>Smart AI systems that automate business processes and reduce cost.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-content">
+            <div>
+                <h2>About TechNova</h2>
+                <p>
+                    We are a top-rated tech company delivering innovative digital solutions
+                    to help brands stay ahead in today’s fast-changing world.
+                </p>
+                <p>
+                    From web and mobile development to AI automation and cloud services,
+                    we empower businesses to scale with confidence.
+                </p>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" alt="Tech Image">
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Pricing</h2>
+
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Starter</h3>
+                    <p class="price">$199</p>
+                    <a href="#payment" class="btn" onclick="selectPlan(199)">Choose Plan</a>
+                </div>
+
+                <div class="price-card featured">
+                    <h3>Business</h3>
+                    <p class="price">$499</p>
+                    <a href="#payment" class="btn" onclick="selectPlan(499)">Choose Plan</a>
+                </div>
+
+                <div class="price-card">
+                    <h3>Enterprise</h3>
+                    <p class="price">$999</p>
+                    <a href="#payment" class="btn" onclick="selectPlan(999)">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment" class="payment">
+        <div class="container">
+            <h2 class="section-title">Secure Payment</h2>
+
+            <form id="paymentForm" class="payment-form">
+                <input type="text" id="customerName" placeholder="Full Name" required>
+                <input type="email" id="customerEmail" placeholder="Email Address" required>
+                
+                <select id="paymentMethod" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="card">Credit / Debit Card</option>
+                    <option value="transfer">Bank Transfer</option>
+                </select>
+
+                <input type="number" id="amount" placeholder="Amount (Auto Filled)" required readonly>
+
+                <button type="submit" class="btn">Make Payment</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+
+            <div class="testimonials-grid">
+                <div class="test-card">
+                    <p>"TechNova built our business website. Excellent service!"</p>
+                    <h4>- Sarah Johnson</h4>
+                </div>
+                <div class="test-card">
+                    <p>"Their cloud services boosted our speed and security."</p>
+                    <h4>- David Smith</h4>
+                </div>
+                <div class="test-card">
+                    <p>"Our mobile app now has 10k+ downloads thanks to TechNova."</p>
+                    <h4>- Michael Brown</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact-content">
+            <h2 class="section-title">Contact Us</h2>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 TechNova Solutions. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
